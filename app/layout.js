@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "MAQ Software",
+  title: "Techvisr - AI-powered Fabric migration solutions",
   description: "AI-powered Fabric migration solutions",
 };
 

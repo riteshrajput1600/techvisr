@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Navbar() {
   const navLinks = [
     { label: "Services", href: "#services" },
@@ -12,7 +14,16 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-white/90 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
         <h1 className="text-xl font-semibold tracking-tight">
-          <span className="text-red-600 font-bold">TechVisr</span>
+          <a href="/" aria-label="TechVisr home" className="block">
+            <Image
+              src="/images/logo.png"
+              alt="TechVisr"
+              width={140}
+              height={36}
+              className="h-9 w-auto"
+              priority
+            />
+          </a>
         </h1>
 
         <nav className="hidden gap-8 text-sm text-gray-600 md:flex">

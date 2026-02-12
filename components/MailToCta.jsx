@@ -16,10 +16,10 @@ export default function MailToCta() {
           <div className="mt-7 inline-flex items-center gap-3 rounded-lg border border-red-200 bg-white px-4 py-3 text-sm font-semibold text-red-700 md:text-base">
             <Mail className="h-5 w-5" />
             <a
-              href="mailto:CustomerSuccess@MAQSoftware.com"
+              href="mailto:admin@techvisr.com"
               className="break-all hover:underline"
             >
-              CustomerSuccess@MAQSoftware.com
+              admin@techvisr.com
             </a>
           </div>
         </div>
