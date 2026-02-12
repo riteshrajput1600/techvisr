@@ -6,7 +6,7 @@ export default function Hero() {
     >
       <div className="absolute inset-0 bg-white/75" />
 
-      <div className="relative max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:py-20 md:py-24">
+      <div className="relative max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:py-10 md:py-10">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-snug md:leading-tight">
           Delivering <span className="font-bold">AI-powered</span> solutions to
           accelerate your <span className="font-bold">Fabric migration</span>
