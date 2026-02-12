@@ -53,7 +53,7 @@ export default function Products() {
             return (
               <div
                 key={index}
-                className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+                className="rounded-xl border border-gray-200 bg-gray-50 p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
                 <Icon className="mb-4 h-8 w-8 text-red-600" />
 
