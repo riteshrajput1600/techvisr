@@ -1,4 +1,3 @@
-import { Mail } from "lucide-react";
 import Community from "../components/Community";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";

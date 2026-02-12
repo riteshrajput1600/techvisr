@@ -1,37 +1,44 @@
 export default function Navbar() {
   const navLinks = [
-    { label: "Services", href: "#" },
-    { label: "Products", href: "#" },
-    { label: "Partnerships", href: "#" },
-    { label: "Resources", href: "#" },
-    { label: "About us", href: "#" },
+    { label: "Services", href: "#services" },
+    { label: "Products", href: "#products" },
+    { label: "Partnerships", href: "#community" },
+    { label: "Resources", href: "#community" },
+    { label: "About us", href: "#about" },
     { label: "Contact us", href: "/contact" },
   ];
 
   return (
-    <header className="w-full border-b bg-white">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="text-xl font-semibold">
+    <header className="sticky top-0 z-50 w-full border-b bg-white/90 backdrop-blur">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
+        <h1 className="text-xl font-semibold tracking-tight">
           <span className="text-red-600 font-bold">TechVisr</span>
         </h1>
 
-        <nav className="hidden md:flex gap-8 text-sm text-gray-600">
+        <nav className="hidden gap-8 text-sm text-gray-600 md:flex">
           {navLinks.map((link) => (
-            <a key={link.label} href={link.href}>
+            <a
+              key={link.label}
+              href={link.href}
+              className="transition-colors hover:text-gray-900"
+            >
               {link.label}
             </a>
           ))}
         </nav>
 
         <details className="relative md:hidden">
-          <summary className="list-none cursor-pointer rounded border px-3 py-2 text-sm text-gray-700">
+          <summary className="list-none cursor-pointer rounded-md border px-3 py-2 text-sm font-medium text-gray-700">
             Menu
           </summary>
-          <nav className="absolute right-0 mt-2 w-48 rounded-lg border bg-white p-3 shadow-lg">
-            <ul className="flex flex-col gap-2 text-sm text-gray-700">
+          <nav className="absolute right-0 mt-2 w-56 rounded-lg border bg-white p-3 shadow-lg">
+            <ul className="flex flex-col gap-1 text-sm text-gray-700">
               {navLinks.map((link) => (
                 <li key={`mobile-${link.label}`}>
-                  <a className="block rounded px-2 py-1 hover:bg-gray-100" href={link.href}>
+                  <a
+                    className="block rounded px-2 py-2 transition-colors hover:bg-gray-300"
+                    href={link.href}
+                  >
                     {link.label}
                   </a>
                 </li>

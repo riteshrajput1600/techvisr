@@ -24,20 +24,18 @@ export default function Community() {
   ];
 
   return (
-    <section className="bg-gray-100 py-10">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
+    <section id="community" className="bg-gray-100 py-16 md:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <h2 className="text-3xl font-semibold text-gray-900 md:text-4xl">
           Become a part of our community
         </h2>
 
-        <p className="mt-4 text-gray-600 max-w-2xl">
+        <p className="mt-4 max-w-2xl text-gray-600">
           Register for our upcoming webinars and view our newsletters
         </p>
 
-        {/* Responsive Grid */}
         <div
-          className="mt-12 grid gap-8 
+          className="mt-12 grid gap-6 
                         grid-cols-1 
                         md:grid-cols-2 
                         xl:grid-cols-3"
@@ -45,28 +43,26 @@ export default function Community() {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="bg-gray-100 border rounded-lg overflow-hidden hover:shadow-md transition duration-300"
+              className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
-              {/* Image */}
               <div className="h-52 w-full overflow-hidden">
                 <img
                   src={card.image}
                   alt={card.title}
-                  className="w-full h-full object-cover"
+                  className="h-full w-full object-cover transition duration-500 hover:scale-105"
                 />
               </div>
 
-              {/* Content */}
               <div className="p-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                <h3 className="mb-3 text-lg font-semibold text-gray-900">
                   {card.title}
                 </h3>
 
-                <p className="text-sm text-gray-600 mb-6">{card.desc}</p>
+                <p className="mb-6 text-sm text-gray-600">{card.desc}</p>
 
                 <a
                   href="#"
-                  className="text-red-600 text-sm font-semibold hover:underline"
+                  className="text-sm font-semibold text-red-600 transition-colors hover:text-red-700"
                 >
                   {card.link}
                 </a>

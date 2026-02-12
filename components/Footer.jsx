@@ -1,17 +1,15 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-700 text-gray-200 py-16">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Grid */}
+    <footer id="about" className="bg-gray-900 py-16 text-gray-300">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div
-          className="grid gap-10 
+          className="grid gap-10 border-b border-gray-800 pb-10
                         grid-cols-1 
                         sm:grid-cols-2 
                         lg:grid-cols-4"
         >
-          {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-6 text-white">Services</h3>
+            <h3 className="mb-6 text-lg font-semibold text-white">Services</h3>
             <ul className="space-y-4 text-sm">
               <li>Agentic AI & machine learning</li>
               <li>Data & analytics</li>
@@ -22,9 +20,8 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Products */}
           <div>
-            <h3 className="text-lg font-semibold mb-6 text-white">Products</h3>
+            <h3 className="mb-6 text-lg font-semibold text-white">Products</h3>
             <ul className="space-y-4 text-sm">
               <li>AI-DataLens</li>
               <li>EmbedFAST</li>
@@ -34,9 +31,8 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Resources */}
           <div>
-            <h3 className="text-lg font-semibold mb-6 text-white">Resources</h3>
+            <h3 className="mb-6 text-lg font-semibold text-white">Resources</h3>
             <ul className="space-y-4 text-sm">
               <li>Case Studies</li>
               <li>Consulting offers</li>
@@ -45,9 +41,8 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* About Us */}
           <div>
-            <h3 className="text-lg font-semibold mb-6 text-white">About us</h3>
+            <h3 className="mb-6 text-lg font-semibold text-white">About us</h3>
             <ul className="space-y-4 text-sm">
               <li>Who we are</li>
               <li>News</li>
@@ -58,6 +53,10 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+
+        <p className="pt-6 text-xs text-gray-400">
+          &copy; {new Date().getFullYear()} TechVisr. All rights reserved.
+        </p>
       </div>
     </footer>
   );

@@ -30,18 +30,16 @@ const products = [
 
 export default function Products() {
   return (
-    <section className="bg-white py-10">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
+    <section id="products" className="bg-white py-16 md:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <h2 className="text-3xl font-semibold text-gray-900 md:text-4xl">
           Explore our products
         </h2>
 
-        <p className="mt-4 text-gray-600 max-w-2xl">
+        <p className="mt-4 max-w-2xl text-gray-600">
           Solutions designed to improve and streamline your operations
         </p>
 
-        {/* Responsive Grid */}
         <div
           className="mt-12 grid gap-6 
                         grid-cols-1 
@@ -55,19 +53,19 @@ export default function Products() {
             return (
               <div
                 key={index}
-                className="bg-white border rounded-lg p-6 hover:shadow-md transition duration-300"
+                className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
-                <Icon className="w-8 h-8 text-gray-800 mb-4" />
+                <Icon className="mb-4 h-8 w-8 text-red-600" />
 
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                <h3 className="mb-3 text-lg font-semibold text-gray-900">
                   {product.title}
                 </h3>
 
-                <p className="text-sm text-gray-600 mb-6">{product.desc}</p>
+                <p className="mb-6 text-sm text-gray-600">{product.desc}</p>
 
                 <a
                   href="#"
-                  className="text-red-600 text-sm font-semibold hover:underline"
+                  className="text-sm font-semibold text-red-600 transition-colors hover:text-red-700"
                 >
                   Learn more &gt;
                 </a>
