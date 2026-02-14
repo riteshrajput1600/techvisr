@@ -4,8 +4,8 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(56,189,248,0.22),transparent_35%),radial-gradient(circle_at_85%_30%,rgba(99,102,241,0.22),transparent_40%)]" />
 
       <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-2 lg:items-center lg:gap-14 lg:py-24">
-        <div>
-          <h1 className="text-4xl font-bold leading-tight text-white md:text-5xl">
+        <div className="relative rounded-2xl border border-cyan-400/25 bg-slate-900/20 p-5 shadow-[0_0_42px_rgba(56,189,248,0.12)] backdrop-blur-[2px] sm:p-7 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none lg:backdrop-blur-0">
+          <h1 className="text-[32px] font-bold leading-tight text-white md:text-[42px]">
             Engineering Intelligent Digital Solutions for Modern Enterprises
           </h1>
 
@@ -38,7 +38,7 @@ export default function Hero() {
         </div>
 
         <div className="relative mx-auto h-[320px] w-full max-w-[520px] lg:h-[380px]">
-          <div className="absolute inset-0 rounded-3xl border border-slate-700/60 bg-slate-900/50 shadow-2xl" />
+          <div className="absolute inset-0 rounded-3xl border border-cyan-400/25 bg-slate-900/50 shadow-[0_0_42px_rgba(56,189,248,0.12)] lg:border-slate-700/60 lg:shadow-2xl" />
           <div className="absolute -left-6 -top-6 h-24 w-24 rounded-full bg-cyan-400/25 blur-2xl" />
           <div className="absolute -bottom-8 -right-6 h-28 w-28 rounded-full bg-indigo-500/25 blur-2xl" />
 
