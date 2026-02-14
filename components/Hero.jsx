@@ -1,9 +1,14 @@
+import Navbar from "./Navbar";
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-slate-950">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(56,189,248,0.22),transparent_35%),radial-gradient(circle_at_85%_30%,rgba(99,102,241,0.22),transparent_40%)]" />
+      <div className="relative z-20">
+        <Navbar />
+      </div>
+      <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(circle_at_15%_20%,rgba(56,189,248,0.22),transparent_35%),radial-gradient(circle_at_85%_30%,rgba(99,102,241,0.22),transparent_40%)]" />
 
-      <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-2 lg:items-center lg:gap-14 lg:py-24">
+      <div className="relative z-10 mx-auto grid max-w-7xl gap-10 px-4 pt-24 pb-16 sm:px-6 sm:py-20 lg:grid-cols-2 lg:items-center lg:gap-14 lg:pt-36 lg:pb-24">
         <div className="relative rounded-2xl border border-cyan-400/25 bg-slate-900/20 p-5 shadow-[0_0_42px_rgba(56,189,248,0.12)] backdrop-blur-[2px] sm:p-7 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none lg:backdrop-blur-0">
           <h1 className="text-[32px] font-bold leading-tight text-white md:text-[42px]">
             Engineering Intelligent Digital Solutions for Modern Enterprises
