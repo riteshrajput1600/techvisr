@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/90 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
-        <h1 className="text-xl font-semibold tracking-tight">
+        <div className="text-xl font-semibold tracking-tight">
           <a href="/" aria-label="TechVisr home" className="block">
             <Image
               src="/images/logo.png"
@@ -24,7 +24,7 @@ export default function Navbar() {
               priority
             />
           </a>
-        </h1>
+        </div>
 
         <nav className="hidden gap-8 text-sm text-gray-600 md:flex">
           {navLinks.map((link) => (

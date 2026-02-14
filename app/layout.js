@@ -1,8 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Techvisr - AI-powered Fabric migration solutions",
-  description: "AI-powered Fabric migration solutions",
+  title: "Techvisr | Software Development, AI & Quality Engineering Services",
+  description:
+    "Techvisr provides end-to-end software development, AI research, product engineering, DevOps, and quality assurance services to startups and enterprises worldwide.",
 };
 
 export default function RootLayout({ children }) {
