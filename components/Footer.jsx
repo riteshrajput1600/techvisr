@@ -11,45 +11,42 @@ export default function Footer() {
           <div>
             <h3 className="mb-6 text-lg font-semibold text-white">Services</h3>
             <ul className="space-y-4 text-sm">
-              <li>Agentic AI & machine learning</li>
-              <li>Data & analytics</li>
-              <li>Reporting & visualization</li>
-              <li>Application modernization</li>
-              <li>Cloud optimization</li>
-              <li>Security</li>
+              <li><a href="/services" className="hover:text-white">Software development</a></li>
+              <li><a href="/services" className="hover:text-white">AI engineering</a></li>
+              <li><a href="/services" className="hover:text-white">Quality engineering</a></li>
+              <li><a href="/services" className="hover:text-white">Cloud & DevOps</a></li>
+              <li><a href="/services" className="hover:text-white">Technology consulting</a></li>
             </ul>
           </div>
 
           <div>
             <h3 className="mb-6 text-lg font-semibold text-white">Products</h3>
             <ul className="space-y-4 text-sm">
-              <li>AI-DataLens</li>
-              <li>EmbedFAST</li>
-              <li>CertyFAST</li>
-              <li>LoadFAST</li>
-              <li>MigrateFAST</li>
+              <li><a href="/#products" className="hover:text-white">AI-DataLens</a></li>
+              <li><a href="/#products" className="hover:text-white">EmbedFAST</a></li>
+              <li><a href="/#products" className="hover:text-white">CertyFAST</a></li>
+              <li><a href="/#products" className="hover:text-white">LoadFAST</a></li>
+              <li><a href="/#products" className="hover:text-white">MigrateFAST</a></li>
             </ul>
           </div>
 
           <div>
             <h3 className="mb-6 text-lg font-semibold text-white">Resources</h3>
             <ul className="space-y-4 text-sm">
-              <li>Case Studies</li>
-              <li>Consulting offers</li>
-              <li>Power BI custom visual guide</li>
-              <li>Best practice guides</li>
+              <li><a href="/case-studies" className="hover:text-white">Case studies</a></li>
+              <li><a href="/services" className="hover:text-white">Service playbooks</a></li>
+              <li><a href="/contact" className="hover:text-white">Consultation offers</a></li>
+              <li><a href="/#community" className="hover:text-white">Industry insights</a></li>
             </ul>
           </div>
 
           <div>
             <h3 className="mb-6 text-lg font-semibold text-white">About us</h3>
             <ul className="space-y-4 text-sm">
-              <li>Who we are</li>
-              <li>News</li>
-              <li>Careers</li>
-              <li>Social impact</li>
-              <li>Sustainability</li>
-              <li>Contact us</li>
+              <li><a href="/#why-techvisr" className="hover:text-white">Who we are</a></li>
+              <li><a href="/services" className="hover:text-white">How we work</a></li>
+              <li><a href="/contact" className="hover:text-white">Contact us</a></li>
+              <li><a href="mailto:admin@techvisr.com" className="hover:text-white">admin@techvisr.com</a></li>
             </ul>
           </div>
         </div>
