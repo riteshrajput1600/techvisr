@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function Navbar() {
   const navLinks = [
-    { label: "Services", href: "#services" },
-    { label: "Products", href: "#products" },
-    { label: "Partnerships", href: "#community" },
-    { label: "Resources", href: "#community" },
-    { label: "About us", href: "#about" },
-    { label: "Contact us", href: "/contact" },
+    { label: "Services", href: "/services" },
+    { label: "Case Studies", href: "/case-studies" },
+    { label: "Products", href: "/#products" },
+    { label: "Industries", href: "/#community" },
+    { label: "Why Techvisr", href: "/#why-techvisr" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
@@ -26,12 +26,12 @@ export default function Navbar() {
           </a>
         </div>
 
-        <nav className="hidden gap-8 text-sm text-gray-600 md:flex">
+        <nav className="hidden gap-8 text-sm font-medium text-gray-600 md:flex">
           {navLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
-              className="transition-colors hover:text-gray-900"
+              className="transition-colors hover:text-red-600"
             >
               {link.label}
             </a>
@@ -46,10 +46,7 @@ export default function Navbar() {
             <ul className="flex flex-col gap-1 text-sm text-gray-700">
               {navLinks.map((link) => (
                 <li key={`mobile-${link.label}`}>
-                  <a
-                    className="block rounded px-2 py-2 transition-colors hover:bg-gray-300"
-                    href={link.href}
-                  >
+                  <a className="block rounded px-2 py-2 hover:bg-red-50" href={link.href}>
                     {link.label}
                   </a>
                 </li>
